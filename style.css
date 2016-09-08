@@ -5,3 +5,16 @@
 .nav-title {
   color: coral !important;
 }
+
+.sentence-one {
+	color: red;
+}
+
+.sentence-two {
+	color: green;
+	font-size: 30px;
+}
+
+.second-template {
+	color: purple;
+}
