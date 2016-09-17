@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+	<h1>Contact Form</h1>
+	<form method="POST" action="https://formspree.io/charward77@hotmail.com">
+    <p>
+      <label>Name
+      	<input type="text" id="name" name="name" maxlength="19" class="form-control">
+      </label>
+    </p>
+	<p>What is your comment about?
+    	<select name="type">
+      		<option value="question">Question</option>
+     	 	<option value="suggestion">Suggestion</option>
+     		<option value="comment">Comment</option>
+    	</select>
+    </p>
+    <p>
+      <label>Comment
+        <textarea name="comments" cols="40" rows="10" maxlength="1000" placeholder="type your comment here"></textarea>
+      </label>
+    </p>
+    <p><input type="submit" value="submit"></p>
+    <p><input type="reset" value="Reset Values"></p>
+</body>
+</html>
