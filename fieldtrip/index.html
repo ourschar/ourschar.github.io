@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fieldtrip Form</title>
+
+    <!-- Custom styles for this template -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="sticky-footer.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Kindergarten Farm Field Trip</h1>
+      </div>
+      <section>
+        <p class="lead">
+          <span class="underline">When:</span> Friday, October 28, 2016<br>
+          <span class="underline">Where:</span> Johnson's Locust Hall Farm (Jobstown, NJ)
+        </p>
+        <p>
+          <span class="underline">Trip Information:</span> In support with learning about the pumpkin life cycle, the students will be able to ride on a hayride to a pumpkin patch where they will each get to pick one pumpkin to bring home. Students will also be able to go through a small corn maze and learn about other important things around the farm.
+        </p>
+        <p>
+          <span class="underline">Cost:</span> $12.00 per student
+        </p>
+        <p>
+          <span class="underline">Time:</span> We will be departing from school by bus at 8:30 am. The students will stay at the farm from 9:00am-11:00am, before arriving back at the school in time for lunch.
+        </p>
+        <p class="bold"><strong>Since we will be getting back to school in time for lunch, <span class="underline uppercase">students may still purchase lunch as always!</span>
+        </strong></p>
+        <p>Please fill out and return the bottom portion of this page along with your cash or check payment (made out to "cash") by <span class="underline bold">September 23rd.</span>
+        </p>
+        <div class="pull-right">
+          <p>Thank you,<br>
+          The Kindergarten Team</p>
+        </div>
+        <div class="clear"></div>
+      </section>
+      <hr class="dotted-line"></hr>
+
+      <section>
+        <p class="underline text-align">Johnson's Locust Hall Farm Trip</p>
+        <form method="POST" action="https://formspree.io/charward77@hotmail.com">
+          <p>
+            <label>Student Name:
+              <input type="text" id="studentName" name="studentName" maxlength="50" class="form-control" required>
+            </label>
+          </p>
+          <p>By signing on the line below, I give my child perimssion to attend this field trip on October 28, 2016 <strong> and have enclosed my payment of $12.00 cash or check (made payable to "cash").</strong></p>
+          <p>
+            <label>Parent Signature:
+              <input type="text" id="parentName" name="parentName" maxlength="50" class="form-control" required>
+            </label>
+          </p>
+          <p>We will be able to bring two chaperones from each kindergarten class. If you are interested in being a chaperone, please check off the box below. Please note that chaperones will be chosen on a "first come, first served basis" and we will contact you if chosen.</p>
+          <p>
+            <label>
+              <input type="checkbox" name="chaperone" value="chaperone"> I wish to be a chaperone! Name:
+              <input class="form-control" type="text" id="chaperoneName" name="chaperoneName" maxlength="50">
+            </label>
+          </p>
+
+          <p><button type="submit" class="btn btn-primary">Submit</button></p>
+        </form>
+      </section>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">App created by 
+          <a href="https://www.linkedin.com/in/charlene-becker-42323372">
+              <i class="fa fa-diamond" aria-hidden="true"></i>
+              Charlene Becker 
+          </a>
+        </p>
+      </div>
+    </footer>
+    </nav>
+  </body>
+</html>
