@@ -9,15 +9,15 @@
 }
 
 .box-size {
-	width:460px;
+	width:1130px;
 }
 
-.push-over {
-	margin-right:30px;
+.moveover {
+	margin-right:20px;
 }
 
 .small-box {
-	width:100px;
+	width:275px;
 }
 
 .dotted-line {
@@ -25,7 +25,7 @@
 }
 
 .dotline-size {
-	width:460px;
+	width:1130px;
 	float:left;
 }
 
@@ -39,12 +39,9 @@
 }
 
 .shorter {
-	width:200px;
+	width:550px;
 }
 
-.shorty {
-	width:100px;
-}
 
 .tooclose {
 	margin-top:30px;
