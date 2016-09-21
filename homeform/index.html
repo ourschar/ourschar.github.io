@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home Form Survey</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <link type="text/css" rel="stylesheet" href="style.css" media="all">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Tell us about your home.</h1>
+            </div>
+            <h2>
+                <span class="bright">Address</span> 
+                <span class="caps-small">Your Information is Private</span>
+            </h2>
+        </div>
+
+        <form method="POST" action:"https://formspree.io/charward77@hotmail.com">
+            <p>
+                <label>Address
+                    <input type="text" id="address" name="address" class="form-control box-size" placeholder="Enter an address" required>
+                </label>
+            </p>
+            <p>
+                <label>Address 2
+                    <input type="text" id="address-two" name="address-two" class="form-control box-size" placeholder="Apt Number">
+                </label>
+            </p>
+            <p>
+                <label class="push-over">City
+                    <input type="text" id="city" name="city" class="form-control" placeholder="City" required>
+                </label>
+                <label class="push-over">State
+                    <input type="text" id="state" name="state" class="form-control small-box" maxlength="2" placeholder="State" required>
+                </label>
+                <label>Zip Code
+                    <input type="text" pattern="^\d{5}(-\d{4})?$" id="zipCode" name="zipCode" class="form-control small-box" placeholder="Zip Code" required>
+                </label>
+            </p>
+            <hr class="dotted-line dotline-size">
+
+            <h2 class="shift">
+                <span class="bright">Bed and Bath</span> 
+                <span class="caps-small">What is your home like?</span>
+            </h2>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <label>Home Type</label>
+                     <p class="form-control shorter">
+                     <select name="homeType"> 
+                         <option value="house">House</option>
+                         <option value="apartment">Apartment</option>
+                         <option value="townhouse">Townhouse</option>
+                         <option value="mobileHome">Mobile Home</option>
+                        </select>
+                     </p>
+                </div>
+                <div class="col-xs-6">
+                    <label>Room Type</label>
+                     <p class="form-control shorter">
+                        <select name="roomType"> 
+                            <option value="entireHome">Entire home/apt</option>
+                            <option value="privateRooms">Private rooms</option>
+                            <option value="sharedRooms">Shared rooms</option>
+                        </select>
+                     </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <label>Bedrooms</label>
+                     <p class="form-control shorter">
+                        <select name="bedroomNumber"> 
+                            <option value="1">1 Bedroom</option>
+                            <option value="2">2 Bedrooms</option>
+                            <option value="3">3 Bedrooms</option>
+                            <option value="4+">4+ Bedrooms</option>
+                         </select>
+                     </p>
+                </div>
+                <div class="col-xs-6">
+                    <label>Bathrooms</label>
+                     <p class="form-control shorter">
+                        <select name="bathroomNumber"> 
+                            <option value="1">1 Bathroom</option>
+                            <option value="2">2 Bathrooms</option>
+                            <option value="3+">3+ Bathrooms</option>
+                        </select>
+                     </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>King Bed</label>
+                     <p class="form-control shorty">
+                        <select name="kingbedNumber"> 
+                             <option value="0">0</option>
+                             <option value="1">1</option>
+                             <option value="2">2</option>
+                             <option value="3">3</option>
+                             <option value="4+">4</option>
+                        </select>
+                     </p>
+                </div>
+                <div class="col-xs-3">
+                    <label>Queen Bed</label>
+                     <p class="form-control shorty">
+                        <select name="queenbedNumber"> 
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4</option>
+                        </select>
+                     </p>
+                </div>
+
+                <div class="col-xs-3">
+                    <label>Full Bed</label>
+                     <p class="form-control shorty">
+                        <select name="fullbedNumber"> 
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4</option>
+                        </select>
+                     </p>
+                </div>
+
+                <div class="col-xs-3">
+                    <label>Twin Bed</label>
+                     <p class="form-control shorty">
+                        <select name="twinbedNumber"> 
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4+">4</option>
+                        </select>
+                     </p>
+                </div>
+
+            </div>
+
+
+
+            <p><button type="submit" class="btn btn-primary btn-block butcolor tooclose">Sign me up!</button></p>
+
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    </form>
+</body>
+
+</html>

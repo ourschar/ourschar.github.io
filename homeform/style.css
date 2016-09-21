@@ -1,0 +1,56 @@
+.bright {
+	color:teal;
+}
+
+.caps-small {
+	font-weight:bold;
+	font-size:15px;
+	text-transform:uppercase;
+}
+
+.box-size {
+	width:460px;
+}
+
+.push-over {
+	margin-right:30px;
+}
+
+.small-box {
+	width:100px;
+}
+
+.dotted-line {
+	border-top:1px dashed;
+}
+
+.dotline-size {
+	width:460px;
+	float:left;
+}
+
+.shift {
+	clear:both;
+}
+
+
+.butcolor {
+	background-color:hotpink;
+}
+
+.shorter {
+	width:200px;
+}
+
+.shorty {
+	width:100px;
+}
+
+.tooclose {
+	margin-top:30px;
+}
+
+.shimmy {
+	float:left;
+}
+
