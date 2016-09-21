@@ -30,10 +30,10 @@
 
     <!-- Begin page content -->
     <div class="container">
-      <div class="page-header">
-        <h1>Kindergarten Farm Field Trip</h1>
-      </div>
       <section>
+        <div class="page-header">
+          <h1>Kindergarten Farm Field Trip</h1>
+        </div>
         <p class="lead">
           <span class="underline">When:</span> Friday, October 28, 2016<br>
           <span class="underline">Where:</span> Johnson's Locust Hall Farm (Jobstown, NJ)
@@ -57,10 +57,10 @@
         </div>
         <div class="clear"></div>
       </section>
-      <hr class="dotted-line"></hr>
+      <hr class="dotted-line">
 
       <section>
-        <p class="underline text-align">Johnson's Locust Hall Farm Trip</p>
+        <h3 class="underline text-align">Johnson's Locust Hall Farm Trip</h3>
         <form method="POST" action="https://formspree.io/charward77@hotmail.com">
           <p>
             <label>Student Name:
@@ -75,9 +75,11 @@
           </p>
           <p>We will be able to bring two chaperones from each kindergarten class. If you are interested in being a chaperone, please check off the box below. Please note that chaperones will be chosen on a "first come, first served basis" and we will contact you if chosen.</p>
           <p>
+            <label class="buffer">
+              <input type="checkbox" name="chaperone" value="yes"> I wish to be a chaperone! 
+            </label>
             <label>
-              <input type="checkbox" name="chaperone" value="yes"> I wish to be a chaperone! Name:
-              <input class="form-control" type="text" id="chaperoneName" name="chaperoneName" maxlength="50">
+              Name: <input class="form-control" type="text" id="chaperoneName" name="chaperoneName" maxlength="50"> 
             </label>
           </p>
 
@@ -86,7 +88,7 @@
       </section>
     </div>
 
-    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
     <footer class="footer">
       <div class="container">
         <p class="text-muted">App created by 

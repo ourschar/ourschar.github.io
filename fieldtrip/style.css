@@ -22,3 +22,10 @@
 	clear:both;
 }
 
+h3 {
+	font-size:18px;
+}
+
+.buffer {
+	margin-right:20px;
+} 
