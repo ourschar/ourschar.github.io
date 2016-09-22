@@ -80,17 +80,28 @@
                     <input type="text" id="address-two" name="address-two" class="form-control box-size" placeholder="Apt Number">
                 </label>
             </p>
-            <p>
-                <label class="shorter moveover">City
-                    <input type="text" id="city" name="city" class="form-control" placeholder="City" required>
-                </label>
-                <label>State
-                    <input type="text" id="state" name="state" class="form-control small-box" maxlength="2" placeholder="State" required>
-                </label>
-                <label>Zip Code
-                    <input type="text" pattern="^\d{5}(-\d{4})?$" id="zipCode" name="zipCode" class="form-control small-box" placeholder="Zip Code" required>
-                </label>
-            </p>
+         
+                <div class="row">
+                    <div class="col-xs-6">
+                      <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" class="form-control" placeholder="City" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" class="form-control" maxlength="2" placeholder="State" required>
+                      </div>
+                    </div>
+                    <div class="col-xs-3">
+                      <div class="form-group">
+                        <label for="zipCode">Zip Code</label>
+                        <input type="text" pattern="^\d{5}(-\d{4})?$" id="zipCode" name="zipCode" class="form-control" placeholder="Zip Code" required>
+                      </div>
+                    </div>
+                </div>
+        
             <hr class="dotted-line dotline-size">
 
             <h2 class="shift">
