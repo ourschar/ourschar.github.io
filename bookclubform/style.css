@@ -1,0 +1,85 @@
+.imp {
+  color:red;
+}
+
+.makeSmall {
+  width:50%;
+}
+
+.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.lineUp {
+  text-align:left;
+}
+
+.moreSpace {
+  margin-top:40px;
+}
+
+.bigFont {
+  font-size:2em;
+}
+
+.moveOver {
+  margin-left:800px;
+  margin-top:40px;
+}
+
+.allnight {
+  margin-left:700px;
+  margin-top:40px;
+}
+
+.tooLight {
+  border-top-color:black;
+}
+
+.push-down {
+  padding-top:20px;
+}
+
+.myrow {
+  margin: 10px 0 10px 0;
+}
+
+.form-container {
+  margin-left:auto; 
+  margin-right:auto; 
+  width:300px;
+}
+
+.form-container .label-box {
+   float:left; 
+   width:80px;
+}
+
+.form-container .input-box {
+  float:left;
+}
+
+.form-container .input-box-long {
+  float:left;
+  width: 200px;
+}
+
+.clear {
+  clear:both;
+}
+
+#gender {
+  width:200px;
+}
+
+
