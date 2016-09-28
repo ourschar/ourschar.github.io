@@ -32,6 +32,20 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript">
+        function enable() {
+            var isChecked = document.getElementById('myCheckbox').checked;
+
+            if (isChecked == true) {
+                document.getElementById("btn-agree").href = "page3.html";    
+            }
+            if (isChecked == false) {
+                document.getElementById("btn-agree").href = "#";
+                alert('Please checkmark the box first');
+            }
+        }
+
+    </script>
 
 </head>
 
@@ -73,12 +87,12 @@
                 <h1>Age Consent</h1>
                 <div class="checkbox lead moreSpace">
                  <label>
-                   <input type="checkbox" value="">I certify that I am 18 years or older and consent to all purchases. 
+                   <input type="checkbox" id="myCheckbox" value="yes">I certify that I am 18 years or older and consent to all purchases. 
                   </label>
                 </div>
                 <p class="moreSpace">
                     <a href="index.html" class="btn btn-primary" role="button">I do NOT agree</a>
-                    <a href="page3.html" class="btn btn-primary" role="button">I agree</a>
+                    <a href="#" id="btn-agree" onclick="enable()" class="btn btn-primary" role="button">I agree</a>
                 </p>
             </div>
         </div>
