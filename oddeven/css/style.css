@@ -36,7 +36,7 @@
 	color:black;
 	font-size:60px;
 	text-align:center;
-	margin-left:300px;
-	font-weight:bold;
+    margin: 0 auto;
+    font-weight:bold;
 	padding-top:25px;
 }
