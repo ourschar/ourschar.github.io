@@ -1,11 +1,12 @@
 #textBox {
 	height:150px;
-	width:400px;
+	max-width:400px;
 	border-radius:25px;
 	border:4px solid darkorange;
 	color:black;
 	font-size:45px;
 	text-align:center;
+	margin: 0 auto;
 }
 
 #textBox:focus {
@@ -29,7 +30,7 @@
 
 #answerBox {
 	height:150px;
-	width:400px;
+	max-width:400px;
 	border-radius:25px;
 	background-color:white;
 	border:4px solid darkorange;
