@@ -1,0 +1,42 @@
+#textBox {
+	height:150px;
+	width:400px;
+	border-radius:25px;
+	border:4px solid darkorange;
+	color:black;
+	font-size:45px;
+	text-align:center;
+}
+
+#textBox:focus {
+	outline:0;
+}
+
+.bigButton {
+	height:100px;
+	width:300px;
+	margin-top:20px;
+	font-size:40px;
+}
+
+.bigButton:focus {
+	outline:0;
+}
+
+#font {
+	font-style:oblique;
+}
+
+#answerBox {
+	height:150px;
+	width:400px;
+	border-radius:25px;
+	background-color:white;
+	border:4px solid darkorange;
+	color:black;
+	font-size:60px;
+	text-align:center;
+	margin-left:300px;
+	font-weight:bold;
+	padding-top:25px;
+}
