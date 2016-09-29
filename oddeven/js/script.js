@@ -2,14 +2,22 @@ function onSubmit() {
   var answerBox = document.getElementById("answerBox");
   var boxValue = document.getElementById("textBox").value;
 
+  if (isNaN(boxValue)) {
+    answerBox.innerHTML = "?";
+    return;
+  }
+
   if (boxValue % 2 == 0) {
     answerBox.innerHTML = "EVEN!";
   }
   else {
     answerBox.innerHTML = "ODD!";
   }
+
   return;
 }
+
+
 
 function reset() {
   var answerBox = document.getElementById("answerBox");
