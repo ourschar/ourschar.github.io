@@ -2,7 +2,7 @@ function onSubmit() {
   var answerBox = document.getElementById("answerBox");
   var boxValue = document.getElementById("textBox").value;
 
-  if (isNaN(boxValue) || "") {
+  if (isNaN(boxValue || "")) {
     answerBox.innerHTML = "?";
     return;
   }
