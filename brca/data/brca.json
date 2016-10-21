@@ -1,0 +1,10 @@
+{
+ BRCA1: [
+   { name: 'Female Breast Cancer', min: 57, max: 87 },
+   { name: 'Ovarian Cancer', min: 24, max: 54 }
+ ],
+ BRCA2: [
+   { name: 'Name 1', min: 1, max: 6 },
+   { name: 'Name 2', min: 20, max: 31 }
+ ]
+}
