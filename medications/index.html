@@ -9,13 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>BRCA Gene Mutation and Cancer Risks</title>
+    <title>Medication Database</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link href="css/full-width-pics.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +28,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -39,19 +41,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#top">Medication Database</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#top">Home</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -62,21 +64,57 @@
 
     <!-- Full Width Image Header with Logo -->
     <!-- Image backgrounds are set within the full-width-pics.css file. -->
-    <header class="image-bg-fluid-height">
-        <img class="img-responsive img-center" src="http://placehold.it/200x200&text=Logo" alt="">
-    </header>
+ 
 
     <!-- Content Section -->
-    <section>
+    <section id="top">
+      <header class="image-bg-fluid-height">
+       
+      </header>
         <div class="container">
+
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="section-heading">BRCA Gene Mutation and Cancer Risks</h1>
-                    <p class="lead section-lead">Choose a BRCA mutation below to see the associated risks.</p>
-                    <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+                    <h1 class="section-heading">Medication Database</h1>
+                    <p class="lead section-lead">Enter a medication name to see usage, adverse reactions, and overdosage information.</p>
                 </div>
             </div>
+              
+                    <p>Enter a medication name</p>
+                    <input type="text" id="textBox" class="form-control"/>
+                    <button type="button" id="searchButton" class="btn btn-primary space">Search</button>
+               
+
+                    <div data-toggle="tab">
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Indications and Usage</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Adverse Reactions</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Overdosage</a></li>
+                      </ul>
+
+                  <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">Test indications and usage</div>
+                        <div role="tabpanel" class="tab-pane" id="profile">Test reactions</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">Test overdosage</div>
+                      </div>
+                    </div>
+
+               
+            
         </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-heading">About</h1>
+                    <p class="lead section-lead">Enter a medication name to see usage, adverse reactions, and overdosage information.</p>
+                </div>
+            </div>
+
     </section>
 
     <!-- Fixed Height Image Aside -->
@@ -84,12 +122,46 @@
     <aside class="image-bg-fixed-height"></aside>
 
 
+
+
+    <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="section-heading">Contact Me</h1>
+                        <p class="lead section-lead">Check out my online presence below:</p>
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-1 text-center">
+                        <a href="https://github.com/ourschar">
+                            <i class="fa fa-github fa-3x sr-contact"></i>
+                        </a>
+                        <p><a href="https://github.com/ourschar">GitHub</a></p>
+                    </div>
+
+                    <div class="col-lg-3 text-center">
+                        <a href="https://ourschar.github.io">
+                            <i class="fa fa-link fa-3x sr-contact"></i>
+                        </a>
+                        <p><a href="https://ourschar.github.io">Web</a></p>
+                    </div>
+
+
+                    <div class="col-lg-3 text-center">
+                        <a href="https://www.linkedin.com/in/charlene-becker-42323372">
+                            <i class="fa fa-linkedin fa-3x sr-contact"></i>
+                        </a>
+                        <p><a href="https://www.linkedin.com/in/charlene-becker-42323372">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; 2016</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -103,6 +175,7 @@
 
     <!-- Bootstrap Core JavaScript -->
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src="js/script.js" type="text/javascript"></script>
 
 </body>
 

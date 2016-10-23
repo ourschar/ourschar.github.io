@@ -1,0 +1,12 @@
+#top {
+	padding: 50px 0;
+}
+
+.space {
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.error {
+	border: 6px solid red;
+}
