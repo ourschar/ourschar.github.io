@@ -81,22 +81,23 @@
             </div>
               
                     <p>Enter a medication name</p>
-                    <input type="text" id="textBox" class="form-control"/>
+                    <input type="text" id="textBox" class="form-control" placeholder="Acetaminophen"/>
                     <button type="button" id="searchButton" class="btn btn-primary space">Search</button>
                
 
                     <div data-toggle="tab">
                       <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Indications and Usage</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Adverse Reactions</a></li>
-                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Overdosage</a></li>
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Indications and Usage</a></li>
+
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Adverse Reactions</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Overdosage</a></li>
                       </ul>
 
                   <!-- Tab panes -->
-                      <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">Test indications and usage</div>
-                        <div role="tabpanel" class="tab-pane" id="profile">Test reactions</div>
-                        <div role="tabpanel" class="tab-pane" id="messages">Test overdosage</div>
+                      <div id="space" class="tab-content">
+                        <div role="tabpanel" class="tab-pane active fade in" id="home">Enter a medication above to view the Indications and Usage</div>
+                        <div role="tabpanel" class="tab-pane fade" id="profile"></div>
+                        <div role="tabpanel" class="tab-pane fade" id="messages"></div>
                       </div>
                     </div>
 
@@ -111,7 +112,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="section-heading">About</h1>
-                    <p class="lead section-lead">Enter a medication name to see usage, adverse reactions, and overdosage information.</p>
+                    <p class="lead section-lead">The medication database is used for quickly retrieving detailed information regarding the usage, adverse reactions, and overdosage information for a specific medication. Simply search by medication name and the information is retrieved from the <a href="https://open.fda.gov/drug/event/">openFDA database.</a> Do not rely on openFDA to make decisions regarding medical care. Always speak to your health provider about the risks and benefits of FDA-regulated products.</p>
                 </div>
             </div>
 
@@ -135,14 +136,14 @@
                         <a href="https://github.com/ourschar">
                             <i class="fa fa-github fa-3x sr-contact"></i>
                         </a>
-                        <p><a href="https://github.com/ourschar">GitHub</a></p>
+                        <p class="changeColor"><a href="https://github.com/ourschar">GitHub</a></p>
                     </div>
 
                     <div class="col-lg-3 text-center">
                         <a href="https://ourschar.github.io">
                             <i class="fa fa-link fa-3x sr-contact"></i>
                         </a>
-                        <p><a href="https://ourschar.github.io">Web</a></p>
+                        <p class="changeColor"><a href="https://ourschar.github.io">Web</a></p>
                     </div>
 
 
@@ -150,7 +151,7 @@
                         <a href="https://www.linkedin.com/in/charlene-becker-42323372">
                             <i class="fa fa-linkedin fa-3x sr-contact"></i>
                         </a>
-                        <p><a href="https://www.linkedin.com/in/charlene-becker-42323372">LinkedIn</a></p>
+                        <p class="changeColor"><a href="https://www.linkedin.com/in/charlene-becker-42323372">LinkedIn</a></p>
                     </div>
                 </div>
             </div>

@@ -10,3 +10,24 @@
 .error {
 	border: 6px solid red;
 }
+
+#space {
+	padding: 10px;
+}
+
+#about {
+	background-color: #efefef;
+}
+
+#contact {
+	background-color: black;
+    color: white;
+}
+
+#contact .fa {
+	color: white;
+}
+
+.changeColor a {
+	color: white;
+}

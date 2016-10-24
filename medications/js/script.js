@@ -24,36 +24,28 @@ $(function() {
     } // End if
   });
 
-
-
-  $('#textBox').keyup(function() {
-    var innerTextBox = $('#textBox');
-    
-    if (innerTextBox.val() === "")  {
-        innerTextBox.addClass('error');
-    }
-    else {
-      innerTextBox.removeClass('error');
-    } 
-    return;
-  });
-
-
   $("#searchButton").click(function() {
     var textBoxField = $("#textBox");
     var url = "https://api.fda.gov/drug/label.json?search=" + textBoxField.val();
 
-    $.ajax({
-      url: url,
-      dataType: 'json',
-      success: function(data) {
+    if (textBoxField.val() != "") {
+      textBoxField.removeClass("error");
 
-        $('#home').text(data.results[0].indications_and_usage[0]);
-        $('#profile').text(data.results[0].adverse_reactions[0]);
-        $('#messages').text(data.results[0].overdosage[0]);
-      }
-    }); 
+      $.ajax({
+        url: url,
+        dataType: 'json',
+        success: function(data) {
 
+          $('#home').text(data.results[0].indications_and_usage[0]);
+          $('#profile').text(data.results[0].adverse_reactions[0]);
+          $('#messages').text(data.results[0].overdosage[0]);
+        }
+      }); 
+    }
+    else {
+      textBoxField.addClass("error");
+    }
+    return;
   });
 
 });
