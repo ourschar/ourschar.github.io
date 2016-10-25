@@ -36,10 +36,34 @@ $(function() {
         dataType: 'json',
         success: function(data) {
 
-          $('#home').text(data.results[0].indications_and_usage[0]);
-          $('#profile').text(data.results[0].adverse_reactions[0]);
-          $('#messages').text(data.results[0].overdosage[0]);
+          $('#errorText').text("");
+
+          if (data.results[0].indications_and_usage) {
+            $('#home').text(data.results[0].indications_and_usage[0]);
+          }
+          else {
+            $('#home').text("No data found");
+          }
+         
+          if (data.results[0].adverse_reactions) {
+            $('#profile').text(data.results[0].adverse_reactions[0]);
+          }
+          else {
+            $('#profile').text("No data found");
+          }
+
+          if (data.results[0].overdosage) {
+            $('#messages').text(data.results[0].overdosage[0]);
+          }
+          else {
+            $('#messages').text("No data found");
+         }
+        },
+
+        error: function(xhr, status, err) {
+          $('#errorText').text("Sorry, that drug name was not found. API error: " + err);
         }
+
       }); 
     }
     else {

@@ -31,3 +31,7 @@
 .changeColor a {
 	color: white;
 }
+
+#errorText {
+	color:red;
+}
