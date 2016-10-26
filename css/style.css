@@ -6,8 +6,8 @@
 	color: black;
 }
 
-a.hrefLink:hover {
-	color: darkblue;
+a.hrefLink:visited {
+	color: black;
 }
 
 .newBackground {
