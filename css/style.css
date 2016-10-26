@@ -1,0 +1,15 @@
+.blackColor {
+	color: black !important;
+}
+
+.hrefLink {
+	color: black;
+}
+
+a.hrefLink:hover {
+	color: darkblue;
+}
+
+.newBackground {
+	background-color: #ccc;
+}
